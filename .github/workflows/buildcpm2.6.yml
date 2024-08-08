@@ -15,7 +15,7 @@ jobs:
       - name: Prepare commit hash
         id: commit_hash
         run: |
-          git clone https://github.com/OpenBMB/llama.cpp cache -b minicpmv-main --depth 1
+          git clone https://github.com/OpenBMB/llama.cpp cache -b minicpmv-main-no-video-inference --depth 1
           cd cache
           echo "hash=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
           cd ..
